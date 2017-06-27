@@ -1,0 +1,28 @@
+{
+  "name": "cli-totp",
+  "description": "CLI for TOTP",
+  "version": "1.0.0",
+  "author": "@kawanet",
+  "bugs": {
+    "url": "https://github.com/kawanet/cli-totp/issues"
+  },
+  "dependencies": {
+    "hi-base32": "^0.2.0",
+    "notp": "^2.0.3",
+    "qs-lite": "^0.0.1"
+  },
+  "homepage": "https://github.com/kawanet/cli-totp#readme",
+  "keywords": [
+    "cli",
+    "totp"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawanet/cli-totp.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
