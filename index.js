@@ -6,7 +6,19 @@ var URL = require("url");
 var qs = require("qs-lite");
 var Base32 = require("hi-base32");
 
-console.log(gen(process.argv[2]));
+function CLI(otpauth) {
+  var prev;
+  next();
+
+  function next() {
+    var s = gen(otpauth);
+    if (s !== prev) console.log(s);
+    prev = s;
+    setTimeout(next, 1);
+  }
+}
+
+CLI(process.argv[2]);
 
 /**
  * @param {String} URL
